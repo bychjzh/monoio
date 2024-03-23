@@ -47,7 +47,7 @@ version = "0.48.0"
 nix = { version = "0.26", optional = true }
 
 [target.'cfg(target_os = "linux")'.dependencies]
-io-uring = { version = "0.6" }
+io-uring = { git = "https://github.com/bychjzh/io-uring.git", branch = "master" }
 
 [dev-dependencies]
 futures = "0.3"
